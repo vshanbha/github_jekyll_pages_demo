@@ -18,4 +18,10 @@ If you want to edit and preview files on local machine then some set up is neede
 - Customization
 - GitHub Push
 
-
+## TO DO 
+- [x] Set up Jekyll Website project
+- [x] Set up GitHub Pages publishin Action
+- [x] Set up custom remote theme for Jekyll
+- [x] Set up site as a Jekyll Site starter template
+- [ ] Improve read me file for real technical users.
+- [ ] Create a "5 minute Quickstart - Jekyll for dummies" blog for non technical users
