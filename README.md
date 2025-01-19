@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: single
 title: Read Me
 permalink: /readme/
 ---
@@ -10,7 +10,7 @@ This repository is meant to help create a quick start / Hello world version of a
 This page covers developer instructions to work with this repository. 
 
 ## Usage Pre-Requisites
-This repository is meant to be a template repository for a Blog or a Website and uses [Jekyll](https://jekyllrb.com/docs/) to transform markdown files into HTML. It has necessary setup to be deployed on to GitHub pages.
+This repository is meant to be a template repository for a Blog or a Website and uses [Jekyll](https://jekyllrb.com/docs/){:target="_blank"} to transform markdown files into HTML. It has necessary setup to be deployed on to GitHub pages.
 
 If you simply want to publish files using the default theme and markdown files and are happy to let Github pages do the publishing then the is not much to do just learn a little bit about Jekyll site structure and start creating posts inside the `_posts` directory. There is a getting started post already included there. You can start by editing that post.
 
@@ -20,9 +20,9 @@ A more detailed usage guide coming soon.
 For developers or programmers who want to have fine grained control over the site here are the steps. 
 
 If you want to edit and preview files on local machine then some set up is needed.
-- `ruby`, `gcc` and `make` Installation: Latest stable [Ruby](https://www.ruby-lang.org/en/downloads/) version is recommended. Jekyll documentation provides up to date [OS specific install guides](https://jekyllrb.com/docs/installation)
-- Jekyll CLI setup: Once pre-requisites are installed we need the `jekyll` and `bundle` command line interface (CLI) tools. Again Jekyll documentation provides a [quick start guide](https://jekyllrb.com/docs/#instructions)
-- GitHub repository from Template: Create a new repository using this repository as a template with [Github templates](https://github.com/new?template_name=github_jekyll_pages_demo&template_owner=vshanbha). 
+- `ruby`, `gcc` and `make` Installation: Latest stable [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"} version is recommended. Jekyll documentation provides up to date [OS specific install guides](https://jekyllrb.com/docs/installation){:target="_blank"}
+- Jekyll CLI setup: Once pre-requisites are installed we need the `jekyll` and `bundle` command line interface (CLI) tools. Again Jekyll documentation provides a [quick start guide](https://jekyllrb.com/docs/#instructions){:target="_blank"}
+- GitHub repository from Template: Create a new repository using this repository as a template with [Github templates](https://github.com/new?template_name=github_jekyll_pages_demo&template_owner=vshanbha){:target="_blank"}. 
 - Clone GitHub repository: Clone the newly created GitHub repository and start editing the project files using your favourite editor.
 - Ensure all Ruby Gem dependencies are installed
 ```bash
@@ -34,12 +34,12 @@ bundle exec jekyll serve
 ```
 ## Customization
 After creating a new repository there are some very simple and basic customization steps to be done and then the newly created GitHub repository would be ready to use as a blog or website. 
-- Configuration: Jekyll offers a lot of finegrained [configuration options](https://jekyllrb.com/docs/configuration/). The file `_config.yml` in the root folder has the bare bones configuration in place. 
+- Configuration: Jekyll offers a lot of finegrained [configuration options](https://jekyllrb.com/docs/configuration/){:target="_blank"}. The file `_config.yml` in the root folder has the bare bones configuration in place. 
 - Name Changes: A few changes are of course in order. In the `_config.yml` Modify the fields `title`, `description`, `baseurl`, `url` and `github_username` to make the site your own.
-- Theme: The `_config.yml` file has a simple responsive theme set up already [`"jekyll-theme-basically-basic"`](https://github.com/mmistakes/jekyll-theme-basically-basic). It is a powerful theme with support for a lot of different features including skins, pagination, Google fonts, Google Analytics, search, tagging, categories and more. The readme page has a lot of information. However, if this is not to your liking consider using a different theme. [Jekyll community](https://jekyllrb.com/docs/themes/) has a lot of themes available for use. 
+- Theme: The `_config.yml` file has a simple responsive theme set up already [`"minimal-mistakes-jekyll"`](https://mmistakes.github.io/minimal-mistakes/){:target="_blank"}. It is a powerful theme with support for a lot of different features including skins, pagination, Google fonts, Google Analytics, search, tagging, categories and more. The documentation page has a lot of information. However, if this is not to your liking consider using a different theme. [Jekyll community](https://jekyllrb.com/docs/themes/){:target="_blank"} has a lot of themes available for use. 
 
 ## Deployment 
-This template is meant to be a quick start for creating a website using Jekyll and Markdown. It includes ready GitHub Action for deploying to [GitHub Pages](https://pages.github.com/) using Jekyll. The file is `jekyll-gh-pages.yml` under `.github/workflows` is ready to use for deployments. All that is left is to set up GitHub pages deployment using this file as the configuration file for the GitHub deployment action.  
+This template is meant to be a quick start for creating a website using Jekyll and Markdown. It includes ready GitHub Action for deploying to [GitHub Pages](https://pages.github.com/){:target="_blank"} using Jekyll. The file is `jekyll.yml` under `.github/workflows` is ready to use for deployments. All that is left is to set up GitHub pages deployment using this file as the configuration file for the GitHub deployment action.  
 
 ## TO DO 
 - [x] Set up Jekyll Website project
