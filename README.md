@@ -24,6 +24,10 @@ If you want to edit and preview files on local machine then some set up is neede
 - Jekyll CLI setup: Once pre-requisites are installed we need the `jekyll` and `bundle` command line interface (CLI) tools. Again Jekyll documentation provides a [quick start guide](https://jekyllrb.com/docs/#instructions)
 - GitHub repository from Template: Create a new repository using this repository as a template with [Github templates](https://github.com/new?template_name=github_jekyll_pages_demo&template_owner=vshanbha). 
 - Clone GitHub repository: Clone the newly created GitHub repository and start editing the project files using your favourite editor.
+- Ensure all Ruby Gem dependencies are installed
+```bash
+bundle install
+```
 - Jekyll local server: Running the site on local machine requires running the local server from the root directory of the newly created project.
 ```bash
 bundle exec jekyll serve
