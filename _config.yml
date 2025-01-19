@@ -26,12 +26,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/github_jekyll_pages_demo" # the subpath of your site, e.g. /blog
 url: "https://github.com/vshanbha" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vshanbha
+repository: "vshanbha/github_jekyll_pages_demo"
 
 # Build settings
 # remote_theme: "mmistakes/jekyll-theme-basically-basic"
-theme: "jekyll-theme-basically-basic"
-plugins:
-  - jekyll-feed
+theme: "minimal-mistakes-jekyll"
+# plugins:
+#   - jekyll-feed
+#   - jekyll-include-cache
   
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,5 +56,17 @@ plugins:
 #   - vendor/ruby/
 
 # Additional Configuration
+minimal_mistakes_skin: "dark"
+
 search: true
 search_full_content: true
+lunr:
+  search_within_pages: true
+  
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      read_time: true
