@@ -28,11 +28,11 @@ url: "https://github.com/vshanbha" # the base hostname & protocol for your site,
 github_username:  vshanbha
 
 # Build settings
-remote_theme: "mmistakes/jekyll-theme-basically-basic"
+# remote_theme: "mmistakes/jekyll-theme-basically-basic"
+theme: "jekyll-theme-basically-basic"
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
-
+  
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
