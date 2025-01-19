@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Site settings
 title: Your awesome title
 logo: "/assets/logos/logo.svg"
 description: >- # this means to ignore newlines until "baseurl:"
@@ -28,6 +29,7 @@ baseurl: "/github_jekyll_pages_demo" # the subpath of your site, e.g. /blog
 url: "https://github.com/vshanbha" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  vshanbha
 repository: "vshanbha/github_jekyll_pages_demo"
+css_inline: false
 
 # Build settings
 # remote_theme: "mmistakes/jekyll-theme-basically-basic"
@@ -43,11 +45,15 @@ plugins:
   - jekyll-include-cache
   - jemoji
 
+# Gem Settings
+paginate: 2 # jekyll-paginate > items per page
+paginate_path: blog/page:num # jekyll-paginate > blog page
+
 # Jekyll Settings
 sass:
   style: compressed # Style compression
 permalink: pretty  # Permalink style (/YYYY/MM/DD/page-name/)
-excerpt_separator:
+excerpt_separator: <!-- more --> 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -72,8 +78,6 @@ exclude:
   - alembic-jekyll-theme.gemspec
 
 # General Configuration
-css_inline: true
-  
 defaults:
   # _posts
   - 
