@@ -93,6 +93,18 @@ defaults:
       type: "pages"
     values:
       layout: page
+  - 
+    scope:
+      path: ""
+      type: "team"
+    values:
+      layout: team_member
+  - 
+    scope:
+      path: ""
+      type: "case-studies"
+    values:
+      layout: case_study
 
 navigation_header:
 - title: Home
@@ -103,7 +115,19 @@ navigation_header:
   url: /readme/
 - title: Search
   url: /search/
+- title: Team
+  url: /team/
+- title: Case Studies
+  url: /case-studies/  
 - title: Use Template
   url: https://github.com/vshanbha/github_jekyll_pages_demo
+
 # Theme specific Configuration
       
+collections:
+  team:
+    output: true
+    permalink: /team/:path/
+  case-studies:
+    output: true
+    permalink: /case-studies/:path/
