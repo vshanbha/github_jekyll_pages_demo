@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Implementing SEO in Jekyll: A Complete Guide"
+title:  "Implementing SEO in Jekyll: Quick Start"
 date:   2025-02-10 19:29:48 UTC
 author: vshanbha
 categories: jekyll seo update
@@ -11,7 +11,7 @@ Search Engine Optimization (SEO) is crucial for ensuring your Jekyll site ranks 
 
 ## Prerequisites
 
-Our Jekyll site already has the necessary plugins installed in `_config.yml`:
+This Jekyll site already has the necessary plugins installed in `_config.yml` and can be used as a quick start template to [create a new Blog](https://github.com/new?template_name=github_jekyll_pages_demo&template_owner=vshanbha):
 ```yaml
 plugins:
   - jekyll-seo-tag
@@ -35,19 +35,20 @@ lang: en
 social:
   name: Your Name
   links:
-    - https://github.com/vshanbha
+    - https://github.com/yourhandle # if applicable
     - https://twitter.com/yourhandle # if applicable
     - https://linkedin.com/in/yourprofile # if applicable
 ```
 ### 2. Creating robots.txt
-Create a `robots.txt` file in your site's root directory with content like below.
-The sitemap.xml is automatically genearted by the Jekyll build, just ensure that the Domain name (`vshanbha.github.io`) and project root (`github_jekyll_pages_demo`) are correctly modified to suit your own site deployment location:
+Create a `robots.txt` file in your site's root directory with content like below:
 
 ```txt
 User-agent: *
 Allow: /
 Sitemap: https://vshanbha.github.io/github_jekyll_pages_demo/sitemap.xml
 ```
+The sitemap.xml is automatically genearted by the Jekyll build, just ensure that the Domain name (`vshanbha.github.io`) and project root (`github_jekyll_pages_demo`) are correctly modified to suit your own site deployment location.
+
 ### 3. More Information about SEO plugin
 This template already has the SEO Tag and Sitemap plugins installed so just the above two changes should be sufficient. If you need to do more with SEO go through the relevant documentation of the Jekyll SEO tag and Sitemap plguins. Also the theme in use by this site has many useful features. Check the [Readme]({% link README.md %}) page for details.
 - [Jekyll SEO Tag Documentation](https://github.com/jekyll/jekyll-seo-tag)
